@@ -17,3 +17,16 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "https://nexus.kloud.software/repository/maven-releases/") {
+                authentication(userName: "${project.property('kloudnexus.user')}", password: "${project.property('kloudnexus.password')}")
+            }
+            pom.version = "$version"
+            pom.artifactId = "$rootProject.name"
+            pom.groupId = "software.kloud"
+        }
+    }
+}
