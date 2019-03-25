@@ -5,6 +5,7 @@ import java.lang.annotation.RetentionPolicy;
 
 @Retention(RetentionPolicy.RUNTIME)
 public @interface KMSPlugin {
+    String name();
     String author();
     String version();
     short priority() default 0;
