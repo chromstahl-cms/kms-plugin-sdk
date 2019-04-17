@@ -6,7 +6,7 @@ apply plugin: 'maven'
 apply plugin: 'maven-publish'
 
 group 'software.kloud'
-version '1.0.5'
+version '1.0.7'
 
 sourceCompatibility = 1.8
 
@@ -15,6 +15,7 @@ repositories {
 }
 
 dependencies {
+    compile group: 'org.springframework.security', name: 'spring-security-core', version: '5.1.5.RELEASE'
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
