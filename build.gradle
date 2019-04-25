@@ -6,7 +6,7 @@ apply plugin: 'maven'
 apply plugin: 'maven-publish'
 
 group 'software.kloud'
-version '1.0.8'
+version '1.0.9'
 
 sourceCompatibility = 12
 
