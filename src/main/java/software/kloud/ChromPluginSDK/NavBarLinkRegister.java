@@ -1,4 +1,4 @@
-package software.kloud.KMSPluginSDK;
+package software.kloud.ChromPluginSDK;
 
 import java.util.List;
 
